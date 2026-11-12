@@ -45,6 +45,8 @@ body {
 
 /* ---------- header / nav ---------- */
 
+header .wrap { max-width: 62rem; }
+
 header {
   border-bottom: 1px solid var(--rule);
   margin-bottom: 3rem;
@@ -53,7 +55,7 @@ header {
 nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.35rem 1.6rem;
+  gap: 0.35rem 2rem;
   align-items: baseline;
   padding: 1.6rem 0 1.35rem;
 }
@@ -61,8 +63,8 @@ nav {
 nav .brand {
   font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-weight: 600;
-  font-size: 0.95rem;
-  letter-spacing: 0.01em;
+  font-size: 1.4rem;
+  letter-spacing: 0;
   color: var(--text);
   text-decoration: none;
   margin-right: auto;
@@ -70,7 +72,7 @@ nav .brand {
 
 nav a.item {
   font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 0.9rem;
+  font-size: 1.05rem;
   color: var(--muted);
   text-decoration: none;
   padding-bottom: 2px;
@@ -86,7 +88,7 @@ nav a.item[aria-current="page"] {
 /* ---------- typography ---------- */
 
 h1 {
-  font-size: 1.9rem;
+  font-size: 2.2rem;
   line-height: 1.2;
   letter-spacing: -0.01em;
   margin: 0 0 0.4rem;
@@ -95,7 +97,7 @@ h1 {
 
 h2 {
   font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   font-weight: 650;
   letter-spacing: 0.005em;
   margin: 3rem 0 0.35rem;
@@ -141,7 +143,7 @@ em, i { font-style: italic; }
 
 .role {
   font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 0.92rem;
+  font-size: 1rem;
   color: var(--muted);
   margin: 0;
 }
