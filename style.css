@@ -1,12 +1,13 @@
 :root {
-  --bg: #f7f6f2;
-  --surface: #fffefb;
-  --text: #1a1c19;
-  --muted: #5b5f59;
-  --faint: #8a8d85;
-  --rule: #e0ddd4;
-  --accent: #2d5f56;
-  --accent-hover: #1d423b;
+  --bg: #ffffff;
+  --surface: #f4f8f7;
+  --text: #14201d;
+  --muted: #55605c;
+  --faint: #838c88;
+  --rule: #dfe6e3;
+  --accent: #0a7d6f;
+  --accent-hover: #075e54;
+  --accent2: #cc8112;
   --maxw: 52rem;
 }
 
@@ -20,6 +21,7 @@
     --rule: #313530;
     --accent: #7fc0b0;
     --accent-hover: #a5d8cb;
+    --accent2: #e0a040;
   }
 }
 
@@ -76,13 +78,13 @@ nav a.item {
   color: var(--muted);
   text-decoration: none;
   padding-bottom: 2px;
-  border-bottom: 1.5px solid transparent;
+  border-bottom: 2px solid transparent;
 }
 
 nav a.item:hover { color: var(--text); }
 nav a.item[aria-current="page"] {
   color: var(--text);
-  border-bottom-color: var(--accent);
+  border-bottom-color: var(--accent2);
 }
 
 /* ---------- typography ---------- */
