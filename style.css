@@ -8,7 +8,7 @@
   --accent: #0a7d6f;
   --accent-hover: #075e54;
   --accent2: #cc8112;
-  --maxw: 52rem;
+  --maxw: 62rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -34,7 +34,7 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: "Source Serif 4", Georgia, "Iowan Old Style", serif;
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
 }
@@ -47,7 +47,7 @@ body {
 
 /* ---------- header / nav ---------- */
 
-header .wrap { max-width: 62rem; }
+header .wrap { max-width: 70rem; }
 
 header {
   border-bottom: 1px solid var(--rule);
@@ -114,7 +114,7 @@ p { margin: 0 0 1.15rem; }
 a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
 a:hover { color: var(--accent-hover); }
 
-.lede { font-size: 1.25rem; line-height: 1.55; }
+.lede { font-size: 1.35rem; line-height: 1.55; }
 
 .subtle {
   color: var(--muted);
@@ -458,4 +458,54 @@ a.btn:hover { background: var(--accent-hover); color: #fff; }
 
 @media (prefers-color-scheme: dark) {
   a.btn, a.btn:hover { color: #10201c; }
+}
+
+/* ---------- selected findings cards ---------- */
+/* Fixed light colors on purpose: the charts inside are drawn for a light card, in both themes. */
+
+.findings {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 21rem), 1fr));
+  gap: 1.5rem;
+  margin: 0 0 0.5rem;
+}
+
+.finding {
+  background: #f4f8f7;
+  color: #14201d;
+  border-top: 3px solid #0a7d6f;
+  border-radius: 4px;
+  padding: 1.4rem 1.5rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.finding p { margin: 0; }
+
+.finding .venue,
+.finding .src,
+.finding .more {
+  font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.finding .venue { font-size: 0.85rem; font-weight: 600; color: #0a7d6f; }
+
+.finding h3 {
+  margin: 0;
+  font-family: "Source Serif 4", Georgia, "Iowan Old Style", serif;
+  font-size: 1.25rem;
+  line-height: 1.35;
+  font-weight: 600;
+  color: #14201d;
+}
+
+.finding .chart { margin-top: auto; padding-top: 0.9rem; }
+.finding .src { font-size: 0.75rem; line-height: 1.45; color: #55605c; }
+.finding .more { font-size: 0.875rem; font-weight: 600; }
+.finding .more a { color: #0a7d6f; text-decoration: none; border: 0; }
+.finding .more a:hover { color: #075e54; }
+
+@media (max-width: 40rem) {
+  .finding { padding: 1.1rem 1rem 1rem; }
 }
