@@ -380,7 +380,7 @@ footer a { color: var(--muted); text-decoration: none; border-bottom: 1px solid 
 footer a:hover { color: var(--text); border-bottom-color: var(--muted); }
 footer .spacer { margin-left: auto; }
 
-h1, h2, .lede { text-wrap: balance; }
+h1, h2 { text-wrap: balance; }
 
 a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
   outline: 2px solid var(--accent);
